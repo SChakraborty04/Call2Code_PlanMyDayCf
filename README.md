@@ -1,5 +1,14 @@
 # PlanMyDay - AI-Powered Day Planner
 
+## Features Implemented according to Feature Book
+
+
+## 🟡 Easy Level (Easy Difficulty)
+-**Creative 404/Error Handling**
+-**Dark Mode Support**
+-**Custom Loading States**
+
+
 ## 🟡 Medium Level (Medium Difficulty)
 - **Dynamic Kanban Board Management** 📋
   - Drag-and-drop task management with real-time updates
@@ -13,6 +22,11 @@
   - NASA APOD-inspired color palettes
   - Dynamic UI elements based on external data
   - Contextual visual feedback system your productivity with intelligent AI agents that create smart daily plans, manage tasks, and optimize your workflow for maximum efficiency.
+
+## 🟡 Hard Level (Easy Difficulty)
+-**Creative 404/Error Handling**
+-**Voice Navigation and Accessibility Features**
+-**Text-to-Speech for Content**
 
 ## 🌟 Live Demo
 
