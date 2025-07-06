@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PlanMyDay Design System - Time-based AI Planner Theme
+All colors MUST be HSL for time-based transitions.
+*/
+
+@layer base {
+  :root {
+    /* Base theme - Morning/Day (6AM - 6PM) - Vibrant light palette */
+    --background: 210 30% 96%; /* Light blue-gray background */
+    --foreground: 225 25% 25%; /* Deeper, richer text color */
+
+    --card: 0 0% 100%;  /* Pure white for cards */
+    --card-foreground: 225 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 25% 20%;
+
+    /* AI Brand Colors - Dynamic based on time */
+    --primary: 220 70% 50%; /* Vibrant blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 70% 60%;
+
+    --secondary: 210 30% 92%; /* Subtle bluish-gray */
+    --secondary-foreground: 225 25% 20%;
+
+    --muted: 210 20% 80%; /* Muted bluish-gray */
+    --muted-foreground: 220 20% 40%;
+
+    --accent: 250 70% 60%; /* Vibrant purple accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 60%; /* Brighter red */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 25% 85%; /* Bluish-gray border */
+    --input: 210 25% 85%;
+    --ring: 220 70% 50%;
+
+    /* Time-based gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 70% 50%), hsl(250 70% 60%));
+    --gradient-morning: linear-gradient(135deg, hsl(35 90% 65%), hsl(45 90% 75%));
+    --gradient-day: linear-gradient(135deg, hsl(210 70% 60%), hsl(200 80% 70%));
+    --gradient-evening: linear-gradient(135deg, hsl(280 60% 60%), hsl(320 70% 70%));
+    --gradient-night: linear-gradient(135deg, hsl(240 60% 30%), hsl(260 70% 40%));
+    
+    /* AI-themed shadows */
+    --shadow-ai: 0 8px 25px -8px hsl(220 70% 50% / 0.3);
+    --shadow-glow: 0 0 30px hsl(220 70% 60% / 0.4);
+    --shadow-card: 0 4px 15px -2px hsl(220 25% 60% / 0.2);
+
+    /* Animation transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 30% 94%; /* Light bluish-gray sidebar */
+    
+    --sidebar-foreground: 225 25% 25%;
+
+    --sidebar-primary: 220 70% 50%;
+
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: 250 70% 60%;
+
+    --sidebar-accent-foreground: 0 0% 100%;
+
+    --sidebar-border: 210 25% 85%;
+
+    --sidebar-ring: 220 70% 50%;
+  }
+
+  .dark {
+    /* Dark theme with AI glow effects */
+    --background: 225 30% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 225 30% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 30% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 65%;
+    --primary-foreground: 225 30% 8%;
+    --primary-glow: 217 91% 75%;
+
+    --secondary: 225 30% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 225 30% 15%;
+    --muted-foreground: 215 20% 75%;
+
+    --accent: 280 80% 70%;
+    --accent-foreground: 225 30% 8%;
+
+    --destructive: 0 95% 65%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 225 30% 20%;
+    --input: 225 30% 20%;
+    --ring: 217 91% 65%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(280 80% 65%));
+    --gradient-morning: linear-gradient(135deg, hsl(35 90% 45%), hsl(45 90% 55%));
+    --gradient-day: linear-gradient(135deg, hsl(217 91% 60%), hsl(200 90% 60%));
+    --gradient-evening: linear-gradient(135deg, hsl(280 80% 55%), hsl(320 80% 65%));
+    --gradient-night: linear-gradient(135deg, hsl(240 70% 35%), hsl(260 80% 45%));
+
+    /* Enhanced shadows for dark mode */
+    --shadow-ai: 0 10px 40px -10px hsl(217 91% 70% / 0.5);
+    --shadow-glow: 0 0 60px hsl(217 91% 80% / 0.4);
+    --shadow-card: 0 8px 25px -5px hsl(225 30% 5% / 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-all duration-300;
+  }
+}
+
+@layer components {
+  /* AI-themed utility classes */
+  .ai-glow {
+    box-shadow: var(--shadow-ai);
+    transition: var(--transition-smooth);
+  }
+  
+  .ai-glow-hover:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+    background-size: 150% 150%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  .gradient-time {
+    background: var(--gradient-day);
+    transition: var(--transition-smooth);
+    background-size: 150% 150%;
+    animation: gradient-shift 12s ease infinite;
+  }
+  
+  .gradient-time.morning {
+    background: var(--gradient-morning);
+  }
+  
+  .gradient-time.evening {
+    background: var(--gradient-evening);
+  }
+  
+  .gradient-time.night {
+    background: var(--gradient-night);
+  }
+  
+  .card-ai {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: calc(var(--radius) + 2px);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+  
+  .card-ai:hover {
+    box-shadow: var(--shadow-ai);
+    transform: translateY(-4px);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .btn-ai {
+    background: var(--gradient-primary);
+    background-size: 150% 150%;
+    animation: gradient-shift 8s ease infinite;
+    color: hsl(var(--primary-foreground));
+    border-radius: var(--radius);
+    transition: var(--transition-bounce);
+    box-shadow: var(--shadow-ai);
+  }
+  
+  .btn-ai:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px) scale(1.02);
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  /* Add animation for gradient effects */
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
