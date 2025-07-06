@@ -158,53 +158,33 @@
 
 ## 📸 Screenshots
 
-### 🏠 Landing Page & Hero Section
-![Landing Page](./screenshots/landing-page.png)
-*Modern landing page with animated hero section showcasing AI-powered planning features*
-
 ### 📋 Kanban Task Board
-![Kanban Board](./screenshots/kanban-board.png)
+
 *Drag-and-drop task management with status tracking and priority indicators*
 
 ### 🤖 AI Task Generation
-![AI Task Generation](./screenshots/ai-task-generation.png)
+
 *Intelligent task creation with custom prompts and plan alignment*
 
 ### 🎤 Voice Task Input
-![Voice Input](./screenshots/voice-input.png)
+
 *Natural language voice task extraction with real-time processing*
 
 ### 📊 Performance Analytics
-![Performance Insights](./screenshots/performance-analytics.png)
+
 *Detailed productivity analytics with AI-powered recommendations*
 
-### 🌙 Dark Mode & Theming
-![Dark Mode](./screenshots/dark-mode.png)
-*Dynamic theming with weather-responsive color schemes*
 
-### 🌤️ Weather Integration
-![Weather Integration](./screenshots/weather-integration.png)
-*Real-time weather data with outdoor task suggestions*
 
 ### 🎮 Interactive Gaming
 ![Gaming System](./screenshots/gaming-system.png)
 *Built-in car racing game for productivity gamification*
 
-### 🚀 NASA APOD Integration
-![NASA APOD](./screenshots/nasa-apod.png)
-*Daily astronomy inspiration with dynamic theme adaptation*
-
-### 📱 Mobile Responsive Design
-![Mobile View](./screenshots/mobile-responsive.png)
-*Fully responsive design optimized for mobile devices*
 
 ### 🎭 Custom 404 Page
-![404 Page](./screenshots/404-page.png)
+
 *Creative animated 404 error handling with interactive elements*
 
-### ⏳ Loading States
-![Loading States](./screenshots/loading-states.png)
-*Custom loading animations and skeleton screens for better UX*
 
 ## 🛠️ Technology Stack
 
