@@ -1,6 +1,6 @@
 # PlanMyDay - AI-Powered Day Planner
 
-Tra### 🟡 Medium Level (Medium Difficulty)
+## 🟡 Medium Level (Medium Difficulty)
 - **Dynamic Kanban Board Management** 📋
   - Drag-and-drop task management with real-time updates
   - Status tracking across multiple stages (Backlog, To Do, In Progress, Done)
