@@ -159,31 +159,38 @@
 ## 📸 Screenshots
 
 ### 📋 Kanban Task Board
+<img width="612" alt="P5" src="https://github.com/user-attachments/assets/b893ac54-626c-43ea-ab59-0223cfe80811" />
 
 *Drag-and-drop task management with status tracking and priority indicators*
 
 ### 🤖 AI Task Generation
+<img width="549" alt="P3" src="https://github.com/user-attachments/assets/bb8e3327-36a0-4c32-97cf-1720696f73f3" />
 
 *Intelligent task creation with custom prompts and plan alignment*
 
 ### 🎤 Voice Task Input
+<img width="631" alt="P6" src="https://github.com/user-attachments/assets/1d0099fd-7104-463e-8b7a-3eee82ea427c" />
 
 *Natural language voice task extraction with real-time processing*
 
 ### 📊 Performance Analytics
+<img width="617" alt="P2" src="https://github.com/user-attachments/assets/5dd9184e-dc39-4aa1-92e8-0eb63f3c7b5f" />
 
 *Detailed productivity analytics with AI-powered recommendations*
 
 
 
 ### 🎮 Interactive Gaming
-![Gaming System](./screenshots/gaming-system.png)
+<img width="655" alt="P4" src="https://github.com/user-attachments/assets/491389db-0f89-4644-b173-6ead4bd5684b" />
+
 *Built-in car racing game for productivity gamification*
 
 
 ### 🎭 Custom 404 Page
+<img width="674" alt="P8" src="https://github.com/user-attachments/assets/852dea46-8b10-452d-a536-b5030fab26c3" />
 
 *Creative animated 404 error handling with interactive elements*
+*Not working in the hosted site due to server errors or the hosting may not support custom 404*
 
 
 ## 🛠️ Technology Stack
@@ -224,7 +231,7 @@
 1. **Clone and Navigate**
    ```bash
    git clone <repository-url>
-   cd Call2Code_final
+   cd <repo> 
    ```
 
 2. **Backend Setup**
